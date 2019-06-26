@@ -9,7 +9,7 @@ name: How we know what we know
 description: Thoughts on epidemiologic methods
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: ![_config.yml]({{ site.baseurl }}/images/dag.png)
+avatar: https://github.com/jalabrecque/jalabrecque.github.io/blob/master/images/dag.png?raw=true
 
 #
 # Flags below are optional
