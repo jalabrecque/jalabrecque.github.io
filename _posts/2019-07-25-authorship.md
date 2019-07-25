@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Authorship soup&#58; measurement error in authorship
+title: Author soup&#58; measurement error in authorship
 published: true
 ---
 
