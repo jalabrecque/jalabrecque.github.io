@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Authorship soup in science
+title: Authorship soup: measurement error in authorship
 published: true
 ---
 
