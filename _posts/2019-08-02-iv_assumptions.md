@@ -61,7 +61,7 @@ While others don't:
   
 Both sets are valid descriptions of the IV assumptions but, to me, the first set has two drawbacks. First, it makes mention of the exposure-outcome confounders. We use IV analyses because we believe that we can't identify all unmeasured confounders so why include them in our definition of an IV? Including a set of variables that we admit a priori that we can't identify in our definition of an IV seems self-defeating. It's impossible to think clearly about the IV assumptions in these terms if we don't know the set of all exposure-outcome confounders. The second drawback is that it's harder to depict graphically.
 
-The second set of assumption makes no reference to exposure-outcome confounders which means that the assumptions are in terms that we can think more clearly about: basically our instrument can only cause the outcome through the exposure and it can't be confoudned with the outcome. And the can be depicted graphically more easily:
+The second set of assumption makes no reference to exposure-outcome confounders which means that the assumptions are in terms that we can think more clearly about: basically our instrument can only cause the outcome through the exposure and it can't be confounded with the outcome. And the can be depicted graphically more easily:
 
 <img src="/images/2019-08-02-iv_assumptions_files/figure-html/unnamed-chunk-3-1.png" style="display: block; margin: auto;" />
 
