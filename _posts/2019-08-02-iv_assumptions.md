@@ -33,7 +33,7 @@ published: true
 
 I read a lot of instrumental variable (IV) papers and most include a description of the IV assumptions. Given that IV analyses are popular in different fields, it isn't surprising that there is a lot of variability in how they are stated. There is more than one way they can be stated accurately. But sometimes it's clear there has been some confusion. Below is a causal graph I often encounter in the epidemiology literature:
 
-<img src="2019-08-02-iv_assumptions_files/figure-html/unnamed-chunk-1-1.png" style="display: block; margin: auto;" />
+<img src="images/2019-08-02-iv_assumptions_files/figure-html/unnamed-chunk-1-1.png" style="display: block; margin: auto;" />
 
 Sometimes the arrow from $$IV$$ to $$C$$ goes in other direction or I've even seen it bidirectional.
 
