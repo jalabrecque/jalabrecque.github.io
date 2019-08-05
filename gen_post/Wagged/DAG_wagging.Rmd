@@ -1,0 +1,34 @@
+---
+title: "DAGs aren't made to wag tales"
+header-includes:
+- \usepackage{tikz}
+- \usepackage{amsmath}
+- \usepackage{float}
+- \usepackage{cite}
+- \usepackage{caption}
+- \usepackage{subcaption}
+- \usepackage{fixltx2e}
+- \usepackage{longtable}
+- \usetikzlibrary{shapes, decorations,calc}
+- \usepackage{pdflscape}
+- \newcommand{\blandscape}{\begin{landscape}}
+- \newcommand{\elandscape}{\end{landscape}}
+- \usepackage{multirow}
+- \usepackage{booktabs}
+- \newcolumntype{L}{<{\centering\arraybackslash}m{9cm}}
+- \usepackage{float}
+- \floatstyle{plaintop}
+- \restylefloat{table}
+- \usepackage{longtable}
+output:
+  html_document:
+    df_print: paged
+    keep_md: TRUE
+  pdf_document:
+    keep_tex: yes
+published: false
+---
+
+It's already been a couple of years since ["The tale wagged by the DAG: broadening the scope of causal inference and explanation for epidemiology"](https://academic.oup.com/ije/article/45/6/1787/2617188) by Nancy Krieger and George Davey Smith was published. Many commentaries were written in response but I always wanted to write my own response. I learned a lot from reading this paper. I disagree with a lot of it but I think it's important and necessary to have these conversations about 
+
+
