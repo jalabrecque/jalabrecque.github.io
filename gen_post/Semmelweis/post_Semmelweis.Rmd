@@ -1,0 +1,42 @@
+---
+title: "DAGs, counterfactuals and inference to the best explanation"
+header-includes:
+- \usepackage{tikz}
+- \usepackage{amsmath}
+- \usepackage{float}
+- \usepackage{cite}
+- \usepackage{caption}
+- \usepackage{subcaption}
+- \usepackage{fixltx2e}
+- \usepackage{longtable}
+- \usetikzlibrary{shapes, decorations,calc}
+- \usepackage{pdflscape}
+- \newcommand{\blandscape}{\begin{landscape}}
+- \newcommand{\elandscape}{\end{landscape}}
+- \usepackage{multirow}
+- \usepackage{booktabs}
+- \newcolumntype{L}{<{\centering\arraybackslash}m{9cm}}
+- \usepackage{float}
+- \floatstyle{plaintop}
+- \restylefloat{table}
+- \usepackage{longtable}
+output:
+  html_document:
+    df_print: paged
+    keep_md: TRUE
+  pdf_document:
+    keep_tex: yes
+published: false
+---
+
+In ["The tale wagged by the DAG: broadening the scope of causal inference and explanation for epidemiology"](https://academic.oup.com/ije/article/45/6/1787/2617188) Nancy Krieger and George Davey Smith layout an argument for broadening the scope of causal inference. I've learned a lot from this paper, both from the things I agree with and the things I disagree with.
+
+In it, there's an illustration of _inference to the best explanation_ using the example of Ignaz Semmelweis and the handwashing medical students. Here, I'm going to use DAGs to show that they would have easily led to the same conclusion. In fact, each of Semmelweis's hypotheses illustrates a different type of variable as can be easily shown on a DAG. The page numbers refer to pages in Lipton's book: 
+
+> p. 74: First set of hypotheses: did not mark the difference (e.g., ‘epidemic influence’, since affected everyone, and no difference in crowding or diet while at the hospital) and so were rejected.
+
+Here, Semmellweis is describing a risk factor that is not related to the exposure as pictured on the DAG below:
+
+
+> pp. 74-75: Second set of hypotheses: did mark a difference, but did not explain it (e.g. only medical students in training treated women in the First Division and only midwives treated women in the Second Division, but both performed similar kinds of examinations, and no exams were rougher than childbirth, ruling out roughness of exam as a factor).
+
