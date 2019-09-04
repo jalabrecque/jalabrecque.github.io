@@ -1649,24 +1649,13 @@ $(document).ready(function () {
 </div>
 
 
-<p>A recent paper by Shrier et al was recently sent to me: <a href="https://ebm.bmj.com/content/early/2019/08/22/bmjebm-2019-111225.abstract">Challenges in interpreting results from ‘multiple regression’ when there is interaction between covariates</a>.<span class="citation">(1)</span> If you’re not familiar with conditional versus marginal estimates it’s a nice review of this concept and even includes a formula in the appendix allowing you to calculate the difference between the conditional and marginal estimates.</p>
+<p>A recent paper by Shrier et al was recently sent to me: <a href="https://ebm.bmj.com/content/early/2019/08/22/bmjebm-2019-111225.abstract">Challenges in interpreting results from ‘multiple regression’ when there is interaction between covariates</a>. If you’re not familiar with conditional versus marginal estimates it’s a nice review of this concept and even includes a formula in the appendix allowing you to calculate the difference between the conditional and marginal estimates.</p>
 <p>Bottomline: when the effect of an exposure or treatment differs across a covariate, conditional estimates (e.g. the coefficient from multiple regression) from models that do no include the interaction between treatment and those covariates will not estimate the population average treatment effect. This means, to correctly estimate the population average treatment effect you have to correctly specify all interactions with treatment in your model (and average over covariates). We already know that measuring and adjusting for all confounders is an impossible goal and now we’re being asked to specify all interactions?</p>
-<p>As Shrier et al point out, inverse probability of treatment weighting will estimate the population average treatment effect without having to specify treatment-covariate interactions. So why do we even bother with conditional estimators? Well, the difference is unlikely to be very large<span class="citation">(2)</span> so maybe it’s not worth the bother. Ok, maybe the difference isn’t very large but there are other reasons to not use conditional estimators.</p>
-<p>First, you’re not a slave to your link function. With binary outcomes, people tend to report odds ratios because that’s what the exponentiated coefficients gives you. Estimating risk differences or risk ratios is possible but a hassle because of convergence issues, etc. But with inverse probability of treatment weighting (and other methods that estimate marginal effects like g-computation and targeted maximum likelihood estimation), it’s easy to choose the parameter you want.<span class="citation">(3)</span></p>
+<p>As Shrier et al point out, inverse probability of treatment weighting will estimate the population average treatment effect without having to specify treatment-covariate interactions. So why do we even bother with conditional estimators? Well, the difference is unlikely to be very large so maybe it’s not worth the bother. Ok, maybe the difference isn’t very large but there are other reasons to not use conditional estimators.</p>
+<p>First, you’re not a slave to your link function. With binary outcomes, people tend to report odds ratios because that’s what the exponentiated coefficients gives you. Estimating risk differences or risk ratios is possible but a hassle because of convergence issues, etc. But with inverse probability of treatment weighting (and other methods that estimate marginal effects like g-computation and targeted maximum likelihood estimation), it’s easy to choose the parameter you want.</p>
 <p>Second, inverse probability of treatment weighting easily lets you check balance in your confounders and whether positivity is satisfied. This is something that should be default behaviour for causal inference.</p>
 <p>And last, inverse probability of treatment weighting and other marginal methods like g-computation and targeted maximum likelihood estimation can easily be compared to each other as a modeling check because, if they disagree, you know <em>at least</em> one model is wrong (note <em>at least</em>, most likely all are wrong) and you can go back and recheck your models.</p>
 <p>So, really, why do we even bother with conditional estimators anymore?</p>
-<div id="refs" class="references">
-<div id="ref-Shrier2019">
-<p>1. Shrier I, Redelmeier A, Schnitzer ME, et al. Challenges in interpreting results from ‘multiple regression’ when there is interaction between covariates. <em>BMJ Evidence-Based Medicine</em> [electronic article]. 2019;0(0):bmjebm–2019–111225. (<a href="http://ebm.bmj.com/lookup/doi/10.1136/bmjebm-2019-111225">http://ebm.bmj.com/lookup/doi/10.1136/bmjebm-2019-111225</a>)</p>
-</div>
-<div id="ref-Greenland1994">
-<p>2. Greenland S, Maldonado G. The interpretation of multiplicative‐model parameters as standardized parameters. <em>Statistics in Medicine</em>. 1994;13(10):989–999. </p>
-</div>
-<div id="ref-Robins2000">
-<p>3. Robins JM, Hernán MA, Brumback B. Marginal structural models and causal inference in epidemiology. <em>Epidemiology (Cambridge, Mass.)</em> [electronic article]. 2000;11(5):550–60. (<a href="http://www.ncbi.nlm.nih.gov/pubmed/10955408">http://www.ncbi.nlm.nih.gov/pubmed/10955408</a>)</p>
-</div>
-</div>
 
 
 
